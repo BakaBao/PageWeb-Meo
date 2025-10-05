@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Élégance – Coiffure & Beauté</title>
+  <style>
+    /* --- Styles de base --- */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+
+    header {
+      background: #111;
+      color: #f8c14d;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #f8c14d;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* --- Section Accueil --- */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507679799987-c73779587ccf') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #f8c14d;
+      color: #111;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background: #dba938;
+    }
+
+    /* --- Section À propos --- */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .about-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    /* --- Services --- */
+    .services {
+      text-align: center;
+    }
+
+    .services h2 {
+      color: #f8c14d;
+      margin-bottom: 30px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .service {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    /* --- Contact --- */
+    .contact {
+      text-align: center;
+      background: #111;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    .contact a {
+      color: #f8c14d;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 { font-size: 2em; }
+      .about { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Salon Élégance</h1>
+    <p>Coiffure & Beauté – Hommes • Femmes • Enfants</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="accueil" class="hero">
+    <h2>Révélez votre beauté naturelle</h2>
+    <p>Des professionnels passionnés au service de vos cheveux.</p>
+    <a href="#contact" class="btn">Prendre rendez-vous</a>
+  </section>
+
+  <section id="about">
+    <div class="about">
+      <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948" alt="Salon de coiffure">
+      <div class="about-text">
+        <h2>À propos de nous</h2>
+        <p>Situé au cœur de la ville, le Salon Élégance est un espace dédié à la beauté et au bien-être capillaire. 
+        Nos coiffeurs experts vous accueillent dans une atmosphère chaleureuse et moderne pour sublimer vos cheveux selon vos envies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Nos Services</h2>
+    <div class="service-grid">
+      <div class="service">
+        <h3>Coupe & Brushing</h3>
+        <p>Adaptée à votre style et à la forme de votre visage.</p>
+      </div>
+      <div class="service">
+        <h3>Coloration</h3>
+        <p>Des teintes naturelles ou audacieuses, selon vos envies.</p>
+      </div>
+      <div class="service">
+        <h3>Soins capillaires</h3>
+        <p>Pour nourrir et revitaliser vos cheveux en profondeur.</p>
+      </div>
+      <div class="service">
+        <h3>Coiffures événementielles</h3>
+        <p>Chignons, tresses ou boucles pour vos plus beaux jours.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact & Rendez-vous</h2>
+    <p>📍 25 Rue de la Beauté, 69000 Lyon</p>
+    <p>📞 <a href="tel:+33123456789">01 23 45 67 89</a></p>
+    <p>📧 <a href="mailto:contact@salonelegance.fr">contact@salonelegance.fr</a></p>
+    <p><a href="#accueil" class="btn">Retour en haut</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Salon Élégance – Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
